@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Next.js',
@@ -18,13 +19,13 @@ export default function RootLayout({ children }) {
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <Link class="nav-link"  href="/">Home</Link>
+         </li>
+        <li class="nav-item">
+        <Link class="nav-link"  href="/data">Data</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+        <Link class="nav-link" href="/data/posts">Posts</Link>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled">Disabled</a>
@@ -33,7 +34,8 @@ export default function RootLayout({ children }) {
     </div>
   </div>
 </nav>
-        {children}</body>
+        {children}
+        </body>
     </html>
   )
 }
