@@ -10,30 +10,21 @@ export default function RootLayout({ children }) {
  return (
     <html lang="en">
       <body>
-      <nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <Link class="nav-link"  href="/">Home</Link>
+      <ul class="navbar-nav bg-light shadow m-5 ">
+        <li class="nav-item ">
+          <Link class="nav-link px-5"  href="/">Home</Link>
          </li>
+         <hr></hr>
         <li class="nav-item">
-        <Link class="nav-link"  href="/data">Data</Link>
+        <Link class="nav-link px-5"  href="/data">Data</Link>
         </li>
+        <hr></hr>
         <li class="nav-item">
-        <Link class="nav-link" href="/data/posts">Posts</Link>
+        <Link class="nav-link  px-5" href="/data/posts">Posts</Link>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
+        
       </ul>
-    </div>
-  </div>
-</nav>
+    
         {children}
         </body>
     </html>
