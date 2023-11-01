@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 
-
+export const runtime = 'nodejs'
 
 const Page = () => {
   const [products, setProducts] = useState([]);
