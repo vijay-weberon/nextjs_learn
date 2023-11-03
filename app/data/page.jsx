@@ -1,9 +1,9 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Link from 'next/link';
 
 
-export const runtime = 'nodejs'
 
 const Page = () => {
   const [products, setProducts] = useState([]);
@@ -27,9 +27,9 @@ const Page = () => {
       <ul>
         {products.map((product) => (
           <li key={product.id}>
-            
+            <Link href={`/data/posts/${product.id}`}>
               <p>{product.title}</p>
-            
+            </Link>
           </li>
         ))}
       </ul>
