@@ -1,8 +1,10 @@
+
 import Link from 'next/link'
 import React from 'react'
 import axios from 'axios'
 
-//Exporting a dynamic metadata
+
+// Exporting a dynamic metadata
 export async function generateMetadata(productId) {
      const response = await axios.get(`https://fakestoreapi.com/products/${productId.params.proId}`);
         const product = response.data;
@@ -17,11 +19,15 @@ export async function generateMetadata(productId) {
     // }
     
 const layout = ({children}) => {
+
   return (
     <div>Selected Product
         {children}
         <p>To go to all products click the button</p>
-        <Link href='../posts/data'><button>Click</button></Link>
+        <Link href='../'><button>Click</button></Link>
+        <button type='button' onClick={()=> router.push('../')}> move to data</button>
+        <button type='button' onClick={()=> router.push('../../')}> move to home</button>
+    
     </div>
   )
 }

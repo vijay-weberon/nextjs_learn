@@ -11,16 +11,16 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
       
-      <ul class="navbar-nav bg-light m-5 p-5">
-        <li class="nav-item">
-          <Link class="nav-link"  href="/">Home</Link>
+      <ul className="navbar-nav bg-light m-5 p-5">
+        <li className="nav-item">
+          <Link className="nav-link"  href="/">Home</Link>
          </li>
          <hr></hr>
-        <li class="nav-item">
-        <Link class="nav-link"  href="/data">Data</Link>
+        <li className="nav-item">
+        <Link className="nav-link"  href="/data">Data</Link>
         </li><hr></hr>
-        <li class="nav-item">
-        <Link class="nav-link" href="/data/posts">Posts</Link>
+        <li className="nav-item">
+        <Link className="nav-link" href="/data/posts">Posts</Link>
         </li><hr></hr>
        
       </ul>

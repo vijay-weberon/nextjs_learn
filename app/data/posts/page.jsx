@@ -1,8 +1,11 @@
 import React from 'react'
-export const runtime = 'nodejs'
+import UseRouter from './useRouter'
+
 const page = () => {
   return (
-    <div>Posts page</div>
+    <div>Posts page
+      <UseRouter/>
+    </div>
   )
 }
 
